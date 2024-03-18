@@ -21,13 +21,15 @@ app.post("/post", (req, res) => {
     res.send("Data Update Request Recieved");
   });
 
-app.listen(PORT, () => {
-    console.log('Server established at ${PORT}');
 
-})
 app.delete("/delete", (req, res) => {
     console.log("DELETE REQUEST SUCCESSFUL");
     console.log(req.body);
     res.send("Data DELETE Request Recieved");
   });
+
+app.listen(PORT, () => {
+      console.log('Server established at ${PORT}');
+
+})
 
